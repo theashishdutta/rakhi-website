@@ -1,0 +1,425 @@
+/* ==========================================================================
+   Festive UI Theme - General Base Styles
+   ========================================================================== */
+body {
+    margin: 0;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #f5e6cc, #f7d699);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #4a0e17;
+}
+
+.card-container {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(74, 14, 23, 0.15);
+    text-align: center;
+    max-width: 550px;
+    width: 90%;
+    border: 3px solid #d4af37;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #8b0000;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #b8860b;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.welcome-box {
+    background: #fff8eb;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    border-left: 4px solid #b8860b;
+}
+
+/* ==========================================================================
+   Navigation Buttons & Global Links
+   ========================================================================== */
+.navigation-menu h3 {
+    color: #8b0000;
+    margin-bottom: 15px;
+}
+
+.btn-sister {
+    display: block;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+}
+
+.btn-sister:hover {
+    background: #d4af37;
+    color: #4a0e17;
+    transform: translateY(-2px);
+}
+
+.btn-gallery {
+    background: #b8860b;
+}
+
+.btn-gallery:hover {
+    background: #8b0000;
+    color: #ffffff;
+}
+
+.back-link {
+    display: inline-block;
+    float: left;
+    color: #8b0000;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.back-link:hover {
+    color: #b8860b;
+}
+
+/* ==========================================================================
+   Letter/Message Page Styling
+   ========================================================================== */
+.letter-box {
+    background: #fffbf4;
+    padding: 25px;
+    border-radius: 15px;
+    border-top: 4px solid #8b0000;
+    text-align: left;
+    margin-top: 20px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+}
+
+.letter-box p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+    text-indent: 10px;
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #8b0000;
+    text-align: center;
+    font-size: 1.15rem !important;
+    margin-top: 25px;
+    border-top: 1px dashed #d4af37;
+    padding-top: 15px;
+}
+
+/* ==========================================================================
+   Single Photo Layout (3rd Page Image Setup)
+   ========================================================================== */
+.single-photo-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.feature-frame {
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(74, 14, 23, 0.1);
+    border: 1px solid #f0dec2;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.responsive-pic {
+    width: 100% !important;
+    max-width: 450px !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border-radius: 6px;
+}
+
+.img-caption {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #8b0000;
+    margin-top: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Photo + Side-Arm Workspace Layout (4th Page System)
+   ========================================================================== */
+.celebration-container {
+    max-width: 620px; /* थोड़ा चौड़ा ताकि बाजू साइड में आ सके */
+}
+
+.photo-ritual-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fffbf4;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px dashed #d4af37;
+    margin: 25px 0;
+}
+
+/* मुख्य कंटेनर जो फोटो और साइडबार बाजू को अगल-बगल रखेगा */
+.celebration-workspace {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.brother-interactive-frame {
+    position: relative;
+    width: 70%; /* फोटो को 70% स्पेस दिया */
+    background: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(74, 14, 23, 0.1);
+    box-sizing: border-box;
+}
+
+.brother-photo-bg {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+/* ==========================================================================
+   Side-Wrist / Side-Arm Graphic Design (NEW)
+   ========================================================================== */
+.brother-wrist-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%; /* बाजू को 25% स्पेस दिया */
+}
+
+/* ट्रेडिशनल स्किन टोन का डिजिटल हाथ */
+.digital-arm {
+    position: relative;
+    width: 45px;
+    height: 160px;
+    background: linear-gradient(to bottom, #fcdbb0, #e0b380);
+    border: 2px solid #c79663;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.wrist-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #b8860b;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+   Rituals Overlays Positioning
+   ========================================================================== */
+.tilak-hidden, .aarti-hidden, .rakhi-hidden, .sweet-hidden {
+    display: none !important;
+}
+
+/* माथे पर सटीक तिलक (22%) */
+.photo-tilak-visible {
+    position: absolute;
+    top: 22% !important;  
+    left: 50.5% !important; 
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 18px;
+    background: #cc0000;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #ff0000, 0 4px 0 #ffd700; 
+    z-index: 999 !important; 
+}
+
+/* पीतल की आरती की थाली */
+/* ==========================================================================
+   Aarti Plate Rotation Fix - Exactly 3 Times and Auto Stop
+   ========================================================================== */
+
+/* पीतल की सुंदर आरती की थाली (फ्लेक्स सेंटर अलाइनमेंट के साथ) */
+/* ==========================================================================
+   Aarti Plate Perfect Rotation & Animation Fix
+   ========================================================================== */
+
+/* पीतल की सुंदर आरती की थाली */
+/* ==========================================================================
+   Ultimate Aarti Plate Position & Rotation Fix 🎯
+   ========================================================================== */
+
+/* पीतल की सुंदर आरती की थाली - बेस पोजीशन फिक्स */
+.photo-aarti-visible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px; 
+    height: 200px;
+    background: radial-gradient(circle, #fff3cc 20%, #fcdb82 60%, #d4af37 100%);
+    border: 5px double #8b0000; 
+    outline: 2px solid #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(139, 0, 0, 0.3), inset 0 0 15px rgba(139, 0, 0, 0.2);
+    z-index: 998 !important;
+    
+    /* यह लाइन थाली को डिफ़ॉल्ट रूप से स्क्रीन के सेंटर में लॉक रखेगी */
+    transform: translate(-50%, -50%) rotate(0deg) !important;
+}
+
+/* थाली को 3 बार घुमाने का जादुई एनीमेशन रूल (सिर्फ एक बार रहेगा) */
+.animate-rotate {
+    /* 2.5 सेकंड प्रति चक्कर × 3 चक्कर = कुल 7.5 सेकंड घूमेगी, फिर रुक जाएगी */
+    animation: circularAarti 2.5s linear 3 forwards !important; 
+}
+
+/* रोटेशन कीफ्रेम्स फिक्स: शुरू से लेकर अंत तक -50% ट्रांसलेट को बनाए रखना ज़रूरी है */
+@keyframes circularAarti {
+    0% { 
+        transform: translate(-50%, -50%) rotate(0deg); 
+    }
+    100% { 
+        transform: translate(-50%, -50%) rotate(360deg); 
+    }
+}
+
+
+
+.thali-item {
+    position: absolute;
+    font-size: 1.8rem; 
+}
+.t1 { top: 10px; left: 50%; transform: translateX(-50%); }     
+.t2 { right: 15px; top: 50%; transform: translateY(-50%); }   
+.t3 { bottom: 10px; left: 50%; transform: translateX(-50%); }  
+.t4 { left: 15px; top: 50%; transform: translateY(-50%); }     
+
+/* मुंह के पास काजू कतली की प्लेट (48%) */
+.photo-sweet-visible {
+    position: absolute;
+    top: 48% !important;   
+    left: 51.5% !important; 
+    font-size: 2.5rem;     
+    z-index: 1000 !important;
+}
+
+/* NEW: साइड वाले डिजिटल हाथ के ऊपर बंधने वाली सुंदर राखी */
+.sidebar-rakhi-visible {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #ff0000, #ffcc00, #ff0000);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 12px;
+    border: 2px solid #8b0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    text-shadow: 1px 1px 2px #000;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    z-index: 1001 !important;
+}
+
+/* ==========================================================================
+   Grid Buttons & Success Message
+   ========================================================================== */
+.celebration-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.tilak-btn { background: #cc0000; box-shadow: 0 4px 12px rgba(204, 0, 0, 0.2); }
+.aarti-btn { background: #b8860b; box-shadow: 0 4px 12px rgba(184, 134, 11, 0.2); }
+.rakhi-btn { background: #ff8c00; box-shadow: 0 4px 12px rgba(255, 140, 0, 0.2); }
+.sweet-btn { background: #20b2aa; box-shadow: 0 4px 12px rgba(32, 178, 170, 0.2); }
+
+.action-btn {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.action-btn:hover:not([disabled]) {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+.alert-hidden { display: none; }
+.alert-visible {
+    background: #fff0f2;
+    border: 2px solid #ffb3bf;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    text-align: center;
+}
+.alert-visible h3 { color: #cc0000; margin-top: 0; font-size: 1.3rem; }
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+.animate-pop { animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+.animate-rotate { animation: circularAarti 4s linear infinite; }
+.animate-eat { animation: sweetPopIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+.animate-bounce { animation: sweetBounce 0.6s ease infinite alternate; }
+
+/* विशेष एनीमेशन साइड हाथ पर राखी बांधने के लिए */
+.animate-pop-wrist { 
+    animation: popInWrist 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; 
+}
+
+@keyframes popIn {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+@keyframes popInWrist {
+    0% { transform: translate(-50%, -50%) scale(0); opacity: 0; }
+    100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
+@keyframes circularAarti {
+
+/* ==========================================================================
+   Stage 5 - Gift Screen Wrapper Adjustments
+   ========================================================================== */
+.puzzle-box, .money-box {
+    box-sizing: border-box;
+    width: 100%;
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
